@@ -12,9 +12,9 @@ namespace Crm.BusinessLayer
         public Test()
         {
             DataAccessLayer.DatabaseContext db = new DataAccessLayer.DatabaseContext();
-            object sonuc = db.Database.CreateIfNotExists(); // db ve tablo oluşumunu sağlar ama örnek data oluşumunu sağlamaz.
+            //db.Database.CreateIfNotExists(); // db ve tablo oluşumunu sağlar ama örnek data oluşumunu sağlamaz.
             // örnek data oluşumu için bir tane tabloyu tolist etmek yeterlı
-            db.Firms.ToList();
+            db.Users.ToList();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Crm.Entities
         public string Address { get; set; }
         public int FirmCategoryId { get; set; } // aşağıdaki virtual ı kullanırsak fazladan 1 select atar. ama bunu kullanırsak dırekt ılıskılendırır ve fazladan select atmaz.
 
-        public virtual Firm Referance { get; set; }
+        //public virtual Firm Referance { get; set; }  // GO TO -> MIGRATION KULLANARAK DENE ÖRNEK OLSUN
 
         public virtual List<FirmNote> FirmNotes { get; set; }
         public virtual List<FirmTask> FirmTasks { get; set; }

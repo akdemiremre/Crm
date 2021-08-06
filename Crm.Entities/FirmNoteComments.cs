@@ -14,5 +14,6 @@ namespace Crm.Entities
         [Required, StringLength(500)]
         public string Description { get; set; }
         public virtual FirmNote FirmNote { get; set; }
+        public virtual User Owner { get; set; }
     }
 }

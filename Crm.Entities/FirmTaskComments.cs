@@ -6,8 +6,9 @@ namespace Crm.Entities
     [Table("FirmTaskComments")]
     public class FirmTaskComments : MyEntityBase
     {
-        [Required, StringLength(500)]
+        [Required, StringLength(5000)]
         public string Description { get; set; }
         public virtual FirmTask FirmTask { get; set; }
+        public virtual User Owner { get; set; }
     }
 }

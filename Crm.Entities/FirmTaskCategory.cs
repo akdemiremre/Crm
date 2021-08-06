@@ -15,6 +15,6 @@ namespace Crm.Entities
         public string Name { get; set; }
         [Required, StringLength(500)]
         public string Color { get; set; }
-        public User Owner { get; set; }
+        public virtual User Owner { get; set; }
     }
 }

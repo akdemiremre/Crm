@@ -11,7 +11,7 @@ namespace Crm.Entities
     [Table("FirmNotes")]
     public class FirmNote : MyEntityBase
     {
-        [Required, StringLength(500)]
+        [Required, StringLength(5000)]
         public string Description { get; set; }
         public int FirmNoteCategoryId { get; set; }
         public virtual FirmNoteCategory FirmNoteCategory { get; set; }
