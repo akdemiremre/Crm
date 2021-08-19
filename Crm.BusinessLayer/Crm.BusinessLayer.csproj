@@ -50,10 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayerResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Crm.Common\Crm.Common.csproj">
+      <Project>{cf4517bd-13bb-44bc-99db-bea8370547ca}</Project>
+      <Name>Crm.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Crm.DataAccessLayer\Crm.DataAccessLayer.csproj">
       <Project>{5887fa25-cbab-44bd-89db-a31e72ca8f53}</Project>
       <Name>Crm.DataAccessLayer</Name>

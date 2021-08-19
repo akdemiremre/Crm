@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Entities", "Crm.Entitie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.WebApp", "Crm.WebApp\Crm.WebApp.csproj", "{94DA67E1-5250-46F4-9AA2-FF263DE49FE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Common", "Crm.Common\Crm.Common.csproj", "{CF4517BD-13BB-44BC-99DB-BEA8370547CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{94DA67E1-5250-46F4-9AA2-FF263DE49FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94DA67E1-5250-46F4-9AA2-FF263DE49FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94DA67E1-5250-46F4-9AA2-FF263DE49FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

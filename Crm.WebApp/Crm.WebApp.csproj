@@ -324,6 +324,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Init\WebCommon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -373,6 +374,10 @@
     <ProjectReference Include="..\Crm.BusinessLayer\Crm.BusinessLayer.csproj">
       <Project>{5a706b59-3d7f-442b-ab9b-57ad69e87754}</Project>
       <Name>Crm.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crm.Common\Crm.Common.csproj">
+      <Project>{cf4517bd-13bb-44bc-99db-bea8370547ca}</Project>
+      <Name>Crm.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Crm.Entities\Crm.Entities.csproj">
       <Project>{ef58d7f5-64c9-4be0-9bd9-fceb9b923a13}</Project>

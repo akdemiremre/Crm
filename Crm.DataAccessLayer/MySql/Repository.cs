@@ -29,6 +29,10 @@ namespace Crm.DataAccessLayer.MySql
         {
             throw new NotImplementedException();
         }
+        public IQueryable ListQueryable()
+        {
+            throw new NotImplementedException();
+        }
 
         public List<T> List(Expression<Func<T, bool>> where)
         {

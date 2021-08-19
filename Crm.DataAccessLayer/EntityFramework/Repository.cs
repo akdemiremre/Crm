@@ -1,5 +1,7 @@
-﻿using Crm.DataAccessLayer;
+﻿using Crm.Common;
+using Crm.DataAccessLayer;
 using Crm.DataAccessLayer.Abstract;
+using Crm.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -25,6 +27,12 @@ namespace Crm.DataAccessLayer.EntityFramework
             //return db.Set<T>().ToList();
             return _objectSet.ToList();
         }
+        public IQueryable ListQueryable()
+        {
+            return _objectSet.AsQueryable<T>(); 
+        }
+
+
         /*
          * 1. YOL -> ToList ile sql e sorgu atılır. List dönünce işlem bitmiş olur. Yani dönen listede son 3 kayıt veya şuna göre sırala vb kullanamayız.
                      bunun için 2. yol olarak IQuaryable kullanmamız gerekiyor. Gelen sonuca .ToList dememiz gerekiyor.
@@ -45,14 +53,45 @@ namespace Crm.DataAccessLayer.EntityFramework
         {
             //db.Set<T>().Add(obj);
             _objectSet.Add(obj);
+            // obj deki model örneğin Firm ise buda MyEntityBase i miras almışssa gelene MyEntityBase gibi davranabiriz.
+            if (obj is MyEntityBase) // GELEN OBJ MYENTİTYBASE Mİ ?
+            {
+                // MyEntityBase e cast edelim
+                MyEntityBase o = obj as MyEntityBase;
+                DateTime now = DateTime.Now;
+
+                o.CreatedOn = now;
+                o.UpdatedOn = now;
+                //o.ModifiedUsername = "system"; // TODO : işlem yapan kullanıcı adı yazdırılacak.
+                o.ModifiedUsername = App.Common.GetCurrentUsername();
+            }
             return Save();
         }
         public int Update(T obj)
         {
+            // obj deki model örneğin Firm ise buda MyEntityBase i miras almışssa gelene MyEntityBase gibi davranabiriz.
+            if (obj is MyEntityBase) // GELEN OBJ MYENTİTYBASE Mİ ?
+            {
+                // MyEntityBase e cast edelim
+                MyEntityBase o = obj as MyEntityBase;
+                o.UpdatedOn = DateTime.Now;
+                //o.ModifiedUsername = "system"; // TODO : işlem yapan kullanıcı adı yazdırılacak.
+                o.ModifiedUsername = App.Common.GetCurrentUsername();
+            }
             return Save();
         }
         public int Delete(T obj)
         {
+            /*
+             * KAYDI GERÇEKTEN SİLECEKSEK BI İŞLEMİN BİR ÖNEMİ YOK. AMA SİLMEYECEK İSREMOVE=1 YAPACAKSAK KULLANIP EN ALTTAKİ OBJECSET.REMOVE U SİLEİBLİRİZ.
+            if (obj is MyEntityBase) // GELEN OBJ MYENTİTYBASE Mİ ?
+            {
+                // MyEntityBase e cast edelim
+                MyEntityBase o = obj as MyEntityBase;
+                o.UpdatedOn = DateTime.Now;
+                o.ModifiedUsername = "system"; // TODO : işlem yapan kullanıcı adı yazdırılacak.
+            }
+            */
             _objectSet.Remove(obj);
             return Save();
         }

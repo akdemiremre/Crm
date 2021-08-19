@@ -10,6 +10,8 @@ namespace Crm.DataAccessLayer.Abstract
     public interface IRepository<T>
     {
         List<T> List();
+        IQueryable ListQueryable();
+
         List<T> List(Expression<Func<T, bool>> where);
 
         //IQueryable<T> List(Expression<Func<T, bool>> where);
