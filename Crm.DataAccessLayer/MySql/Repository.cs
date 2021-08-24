@@ -1,4 +1,4 @@
-﻿using Crm.DataAccessLayer.Abstract;
+﻿using Crm.Core.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Crm.DataAccessLayer.MySql
 {
-    public class Repository<T> : RepositoryBase, IRepository<T> where T : class
+    public class Repository<T> : RepositoryBase, IDataAccess<T> where T : class
     {
         public int Delete(T obj)
         {

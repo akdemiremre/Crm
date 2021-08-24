@@ -16,7 +16,8 @@ namespace Crm.WebApp.Init
                 User user = HttpContext.Current.Session["Login"] as User;
                 return user.Username;
             }
-            return null;
+            // return null;
+            return "system";
         }
     }
 }

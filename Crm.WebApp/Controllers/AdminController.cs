@@ -12,7 +12,7 @@ namespace Crm.WebApp.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            Crm.BusinessLayer.Test test = new Test();
+            Denemeler denemeler = new Denemeler();
             
             return View();
         }

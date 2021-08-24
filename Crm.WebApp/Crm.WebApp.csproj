@@ -44,10 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -94,6 +94,261 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminTemplate\apps-calendar.html" />
+    <Content Include="AdminTemplate\apps-chat.html" />
+    <Content Include="AdminTemplate\apps-contacts-grid.html" />
+    <Content Include="AdminTemplate\apps-contacts-list.html" />
+    <Content Include="AdminTemplate\apps-contacts-profile.html" />
+    <Content Include="AdminTemplate\apps-email-inbox.html" />
+    <Content Include="AdminTemplate\apps-email-read.html" />
+    <Content Include="AdminTemplate\apps-invoices-detail.html" />
+    <Content Include="AdminTemplate\apps-invoices-list.html" />
+    <Content Include="AdminTemplate\assets\css\app.min.css" />
+    <Content Include="AdminTemplate\assets\css\bootstrap.min.css" />
+    <Content Include="AdminTemplate\assets\css\icons.min.css" />
+    <Content Include="AdminTemplate\assets\css\preloader.min.css" />
+    <Content Include="AdminTemplate\assets\fonts\boxicons.html" />
+    <Content Include="AdminTemplate\assets\fonts\boxiconsd41d.svg" />
+    <Content Include="AdminTemplate\assets\fonts\dripicons-v2.svg" />
+    <Content Include="AdminTemplate\assets\fonts\fa-brands-400.html" />
+    <Content Include="AdminTemplate\assets\fonts\fa-brands-400.svg" />
+    <Content Include="AdminTemplate\assets\fonts\fa-regular-400.html" />
+    <Content Include="AdminTemplate\assets\fonts\fa-regular-400.svg" />
+    <Content Include="AdminTemplate\assets\fonts\fa-solid-900.html" />
+    <Content Include="AdminTemplate\assets\fonts\fa-solid-900.svg" />
+    <Content Include="AdminTemplate\assets\fonts\materialdesignicons-webfont3e71.html" />
+    <Content Include="AdminTemplate\assets\images\bg-1.jpg" />
+    <Content Include="AdminTemplate\assets\images\bg-2.jpg" />
+    <Content Include="AdminTemplate\assets\images\bg-3.jpg" />
+    <Content Include="AdminTemplate\assets\images\brands\bitbucket.png" />
+    <Content Include="AdminTemplate\assets\images\brands\dribbble.png" />
+    <Content Include="AdminTemplate\assets\images\brands\dropbox.png" />
+    <Content Include="AdminTemplate\assets\images\brands\github.png" />
+    <Content Include="AdminTemplate\assets\images\brands\mail_chimp.png" />
+    <Content Include="AdminTemplate\assets\images\brands\slack.png" />
+    <Content Include="AdminTemplate\assets\images\error-img.png" />
+    <Content Include="AdminTemplate\assets\images\favicon.ico" />
+    <Content Include="AdminTemplate\assets\images\flags\germany.jpg" />
+    <Content Include="AdminTemplate\assets\images\flags\italy.jpg" />
+    <Content Include="AdminTemplate\assets\images\flags\russia.jpg" />
+    <Content Include="AdminTemplate\assets\images\flags\spain.jpg" />
+    <Content Include="AdminTemplate\assets\images\flags\us.jpg" />
+    <Content Include="AdminTemplate\assets\images\giftbox.png" />
+    <Content Include="AdminTemplate\assets\images\logo-sm.svg" />
+    <Content Include="AdminTemplate\assets\images\small\img-1.jpg" />
+    <Content Include="AdminTemplate\assets\images\small\img-2.jpg" />
+    <Content Include="AdminTemplate\assets\images\small\img-3.jpg" />
+    <Content Include="AdminTemplate\assets\images\small\img-4.jpg" />
+    <Content Include="AdminTemplate\assets\images\small\img-5.jpg" />
+    <Content Include="AdminTemplate\assets\images\small\img-6.jpg" />
+    <Content Include="AdminTemplate\assets\images\small\img-7.jpg" />
+    <Content Include="AdminTemplate\assets\images\undraw-calendar.svg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-1.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-2.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-3.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-4.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-5.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-6.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-8.jpg" />
+    <Content Include="AdminTemplate\assets\images\users\avatar-9.jpg" />
+    <Content Include="AdminTemplate\assets\js\app.js" />
+    <Content Include="AdminTemplate\assets\js\pages\apexcharts.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\calendar.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\chartjs.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\coming-soon.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\dashboard.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\datatable-pages.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\datatables.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\echarts.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\email-editor.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\fontawesome.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\form-advanced.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\form-editor.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\form-mask.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\form-validation.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\form-wizard.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\gmaps.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\invoices-list.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\jquery-knob.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\leaflet-map.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\leaflet-us-states.js" />
+    <Content Include="AdminTemplate\assets\js\pages\lightbox.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\materialdesign.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\notification.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\pass-addon.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\rangeslider.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\rating.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\session-timeout.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\sparklines.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\sweetalert.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\table-editable.int.js" />
+    <Content Include="AdminTemplate\assets\js\pages\table-responsive.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\two-step-verification.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\validation.init.js" />
+    <Content Include="AdminTemplate\assets\js\pages\vector-maps.init.js" />
+    <Content Include="AdminTemplate\assets\libs\%40ckeditor\ckeditor5-build-classic\build\ckeditor.js" />
+    <Content Include="AdminTemplate\assets\libs\%40curiosityx\bootstrap-session-timeout\index.js" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\bootstrap\main.min.css" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\bootstrap\main.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\core\main.min.css" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\core\main.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\daygrid\main.min.css" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\daygrid\main.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\interaction\main.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\timegrid\main.min.css" />
+    <Content Include="AdminTemplate\assets\libs\%40fullcalendar\timegrid\main.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40simonwep\pickr\pickr.es5.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40simonwep\pickr\pickr.min.js" />
+    <Content Include="AdminTemplate\assets\libs\%40simonwep\pickr\themes\classic.min.css" />
+    <Content Include="AdminTemplate\assets\libs\%40simonwep\pickr\themes\monolith.min.css" />
+    <Content Include="AdminTemplate\assets\libs\%40simonwep\pickr\themes\nano.min.css" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\jquery-jvectormap-1.2.2.css" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-au-mill-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-ca-lcc-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-in-mill-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-uk-mill-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-us-il-chicago-mill-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-us-merc-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\jquery.vectormap\maps\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\rwd-table\rwd-table.min.css" />
+    <Content Include="AdminTemplate\assets\libs\admin-resources\rwd-table\rwd-table.min.js" />
+    <Content Include="AdminTemplate\assets\libs\alertifyjs\build\alertify.min.js" />
+    <Content Include="AdminTemplate\assets\libs\alertifyjs\build\css\alertify.min.css" />
+    <Content Include="AdminTemplate\assets\libs\alertifyjs\build\css\themes\default.min.css" />
+    <Content Include="AdminTemplate\assets\libs\apexcharts\apexcharts.min.js" />
+    <Content Include="AdminTemplate\assets\libs\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="AdminTemplate\assets\libs\chart.js\Chart.bundle.min.js" />
+    <Content Include="AdminTemplate\assets\libs\choices.js\public\assets\scripts\choices.min.js" />
+    <Content Include="AdminTemplate\assets\libs\choices.js\public\assets\styles\choices.min.css" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-bs4\css\dataTables.bootstrap4.min.css" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-bs4\js\dataTables.bootstrap4.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-buttons-bs4\css\buttons.bootstrap4.min.css" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-buttons-bs4\js\buttons.bootstrap4.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-buttons\js\buttons.colVis.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-buttons\js\buttons.html5.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-buttons\js\buttons.print.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-buttons\js\dataTables.buttons.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net-responsive\js\dataTables.responsive.min.js" />
+    <Content Include="AdminTemplate\assets\libs\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="AdminTemplate\assets\libs\dropzone\min\dropzone.min.css" />
+    <Content Include="AdminTemplate\assets\libs\dropzone\min\dropzone.min.js" />
+    <Content Include="AdminTemplate\assets\libs\echarts\echarts.min.js" />
+    <Content Include="AdminTemplate\assets\libs\feather-icons\feather.min.js" />
+    <Content Include="AdminTemplate\assets\libs\flatpickr\flatpickr.min.css" />
+    <Content Include="AdminTemplate\assets\libs\flatpickr\flatpickr.min.js" />
+    <Content Include="AdminTemplate\assets\libs\glightbox\css\glightbox.min.css" />
+    <Content Include="AdminTemplate\assets\libs\glightbox\js\glightbox.min.js" />
+    <Content Include="AdminTemplate\assets\libs\gmaps\gmaps.min.js" />
+    <Content Include="AdminTemplate\assets\libs\imask\imask.min.js" />
+    <Content Include="AdminTemplate\assets\libs\jquery-countdown\jquery.countdown.min.js" />
+    <Content Include="AdminTemplate\assets\libs\jquery-knob\jquery.knob.min.js" />
+    <Content Include="AdminTemplate\assets\libs\jquery-sparkline\jquery.sparkline.min.js" />
+    <Content Include="AdminTemplate\assets\libs\jquery\jquery.min.js" />
+    <Content Include="AdminTemplate\assets\libs\jszip\jszip.min.js" />
+    <Content Include="AdminTemplate\assets\libs\leaflet\images\layers-2x.png" />
+    <Content Include="AdminTemplate\assets\libs\leaflet\images\layers.png" />
+    <Content Include="AdminTemplate\assets\libs\leaflet\images\marker-icon.png" />
+    <Content Include="AdminTemplate\assets\libs\leaflet\leaflet.css" />
+    <Content Include="AdminTemplate\assets\libs\leaflet\leaflet.js" />
+    <Content Include="AdminTemplate\assets\libs\metismenu\metisMenu.min.js" />
+    <Content Include="AdminTemplate\assets\libs\node-waves\waves.min.js" />
+    <Content Include="AdminTemplate\assets\libs\nouislider\nouislider.min.css" />
+    <Content Include="AdminTemplate\assets\libs\nouislider\nouislider.min.js" />
+    <Content Include="AdminTemplate\assets\libs\pace-js\pace.min.js" />
+    <Content Include="AdminTemplate\assets\libs\pdfmake\build\pdfmake.min.js" />
+    <Content Include="AdminTemplate\assets\libs\pdfmake\build\vfs_fonts.js" />
+    <Content Include="AdminTemplate\assets\libs\pristinejs\pristine.min.js" />
+    <Content Include="AdminTemplate\assets\libs\rater-js\index.js" />
+    <Content Include="AdminTemplate\assets\libs\simplebar\simplebar.min.js" />
+    <Content Include="AdminTemplate\assets\libs\sweetalert2\sweetalert2.min.css" />
+    <Content Include="AdminTemplate\assets\libs\sweetalert2\sweetalert2.min.js" />
+    <Content Include="AdminTemplate\assets\libs\swiper\swiper-bundle.min.css" />
+    <Content Include="AdminTemplate\assets\libs\swiper\swiper-bundle.min.js" />
+    <Content Include="AdminTemplate\assets\libs\table-edits\build\table-edits.min.js" />
+    <Content Include="AdminTemplate\assets\libs\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="AdminTemplate\assets\libs\twitter-bootstrap-wizard\prettify.css" />
+    <Content Include="AdminTemplate\assets\libs\twitter-bootstrap-wizard\prettify.js" />
+    <Content Include="AdminTemplate\assets\libs\wnumb\wNumb.min.js" />
+    <Content Include="AdminTemplate\auth-confirm-mail.html" />
+    <Content Include="AdminTemplate\auth-email-verification.html" />
+    <Content Include="AdminTemplate\auth-lock-screen.html" />
+    <Content Include="AdminTemplate\auth-login.html" />
+    <Content Include="AdminTemplate\auth-logout.html" />
+    <Content Include="AdminTemplate\auth-recoverpw.html" />
+    <Content Include="AdminTemplate\auth-register.html" />
+    <Content Include="AdminTemplate\auth-two-step-verification.html" />
+    <Content Include="AdminTemplate\charts-apex.html" />
+    <Content Include="AdminTemplate\charts-chartjs.html" />
+    <Content Include="AdminTemplate\charts-echart.html" />
+    <Content Include="AdminTemplate\charts-knob.html" />
+    <Content Include="AdminTemplate\charts-sparkline.html" />
+    <Content Include="AdminTemplate\extended-lightbox.html" />
+    <Content Include="AdminTemplate\extended-notifications.html" />
+    <Content Include="AdminTemplate\extended-rangeslider.html" />
+    <Content Include="AdminTemplate\extended-rating.html" />
+    <Content Include="AdminTemplate\extended-session-timeout.html" />
+    <Content Include="AdminTemplate\extended-sweet-alert.html" />
+    <Content Include="AdminTemplate\form-advanced.html" />
+    <Content Include="AdminTemplate\form-editors.html" />
+    <Content Include="AdminTemplate\form-elements.html" />
+    <Content Include="AdminTemplate\form-mask.html" />
+    <Content Include="AdminTemplate\form-uploads.html" />
+    <Content Include="AdminTemplate\form-validation.html" />
+    <Content Include="AdminTemplate\form-wizard.html" />
+    <Content Include="AdminTemplate\icons-boxicons.html" />
+    <Content Include="AdminTemplate\icons-dripicons.html" />
+    <Content Include="AdminTemplate\icons-fontawesome.html" />
+    <Content Include="AdminTemplate\icons-materialdesign.html" />
+    <Content Include="AdminTemplate\index-dark-rtl.html" />
+    <Content Include="AdminTemplate\index-dark.html" />
+    <Content Include="AdminTemplate\index-rtl.html" />
+    <Content Include="AdminTemplate\index.html" />
+    <Content Include="AdminTemplate\layouts-hori-boxed.html" />
+    <Content Include="AdminTemplate\layouts-hori-scrollable.html" />
+    <Content Include="AdminTemplate\layouts-hori-topbar-dark.html" />
+    <Content Include="AdminTemplate\layouts-horizontal-dark-rtl.html" />
+    <Content Include="AdminTemplate\layouts-horizontal-dark.html" />
+    <Content Include="AdminTemplate\layouts-horizontal-rtl.html" />
+    <Content Include="AdminTemplate\layouts-horizontal.html" />
+    <Content Include="AdminTemplate\layouts-verti-boxed.html" />
+    <Content Include="AdminTemplate\layouts-verti-brand-sidebar.html" />
+    <Content Include="AdminTemplate\layouts-verti-compact-sidebar.html" />
+    <Content Include="AdminTemplate\layouts-verti-dark-sidebar.html" />
+    <Content Include="AdminTemplate\layouts-verti-icon-sidebar.html" />
+    <Content Include="AdminTemplate\layouts-verti-scrollable.html" />
+    <Content Include="AdminTemplate\maps-google.html" />
+    <Content Include="AdminTemplate\maps-leaflet.html" />
+    <Content Include="AdminTemplate\maps-vector.html" />
+    <Content Include="AdminTemplate\pages-404.html" />
+    <Content Include="AdminTemplate\pages-500.html" />
+    <Content Include="AdminTemplate\pages-comingsoon.html" />
+    <Content Include="AdminTemplate\pages-faqs.html" />
+    <Content Include="AdminTemplate\pages-maintenance.html" />
+    <Content Include="AdminTemplate\pages-pricing.html" />
+    <Content Include="AdminTemplate\pages-starter.html" />
+    <Content Include="AdminTemplate\pages-timeline.html" />
+    <Content Include="AdminTemplate\tables-basic.html" />
+    <Content Include="AdminTemplate\tables-datatable.html" />
+    <Content Include="AdminTemplate\tables-editable.html" />
+    <Content Include="AdminTemplate\tables-responsive.html" />
+    <Content Include="AdminTemplate\ui-alerts.html" />
+    <Content Include="AdminTemplate\ui-buttons.html" />
+    <Content Include="AdminTemplate\ui-cards.html" />
+    <Content Include="AdminTemplate\ui-carousel.html" />
+    <Content Include="AdminTemplate\ui-colors.html" />
+    <Content Include="AdminTemplate\ui-dropdowns.html" />
+    <Content Include="AdminTemplate\ui-general.html" />
+    <Content Include="AdminTemplate\ui-grid.html" />
+    <Content Include="AdminTemplate\ui-images.html" />
+    <Content Include="AdminTemplate\ui-modals.html" />
+    <Content Include="AdminTemplate\ui-offcanvas.html" />
+    <Content Include="AdminTemplate\ui-progressbars.html" />
+    <Content Include="AdminTemplate\ui-tabs-accordions.html" />
+    <Content Include="AdminTemplate\ui-typography.html" />
+    <Content Include="AdminTemplate\ui-video.html" />
     <Content Include="Content\assets\css\app.min.css" />
     <Content Include="Content\assets\css\bootstrap.min.css" />
     <Content Include="Content\assets\css\icons.min.css" />
@@ -281,12 +536,6 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\assets\fonts\boxicons.eot" />
     <Content Include="Content\assets\fonts\boxicons.ttf" />
     <Content Include="Content\assets\fonts\boxicons.woff" />
@@ -310,25 +559,18 @@
     <Content Include="Content\assets\fonts\materialdesignicons-webfont3e71.ttf" />
     <Content Include="Content\assets\fonts\materialdesignicons-webfont3e71.woff" />
     <Content Include="Content\assets\fonts\materialdesignicons-webfontd41d.eot" />
-    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
-    <Content Include="Scripts\jquery-3.6.0.js" />
-    <Content Include="Scripts\jquery-3.6.0.min.js" />
-    <Content Include="Scripts\jquery-3.6.0.slim.js" />
-    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Init\WebCommon.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Content\bootstrap.rtl.min.css.map" />
     <Content Include="Content\bootstrap.rtl.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
@@ -345,13 +587,51 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="AdminTemplate\assets\fonts\boxicons.eot" />
+    <Content Include="AdminTemplate\assets\fonts\boxicons.ttf" />
+    <Content Include="AdminTemplate\assets\fonts\boxicons.woff" />
+    <Content Include="AdminTemplate\assets\fonts\dripicons-v2.eot" />
+    <Content Include="AdminTemplate\assets\fonts\dripicons-v2.ttf" />
+    <Content Include="AdminTemplate\assets\fonts\dripicons-v2.woff" />
+    <Content Include="AdminTemplate\assets\fonts\dripicons-v2d41d.eot" />
+    <Content Include="AdminTemplate\assets\fonts\fa-brands-400.eot" />
+    <Content Include="AdminTemplate\assets\fonts\fa-brands-400.ttf" />
+    <Content Include="AdminTemplate\assets\fonts\fa-brands-400.woff" />
+    <Content Include="AdminTemplate\assets\fonts\fa-brands-400d41d.eot" />
+    <Content Include="AdminTemplate\assets\fonts\fa-regular-400.eot" />
+    <Content Include="AdminTemplate\assets\fonts\fa-regular-400.ttf" />
+    <Content Include="AdminTemplate\assets\fonts\fa-regular-400.woff" />
+    <Content Include="AdminTemplate\assets\fonts\fa-regular-400d41d.eot" />
+    <Content Include="AdminTemplate\assets\fonts\fa-solid-900.eot" />
+    <Content Include="AdminTemplate\assets\fonts\fa-solid-900.ttf" />
+    <Content Include="AdminTemplate\assets\fonts\fa-solid-900.woff" />
+    <Content Include="AdminTemplate\assets\fonts\fa-solid-900d41d.eot" />
+    <Content Include="AdminTemplate\assets\fonts\materialdesignicons-webfont3e71.eot" />
+    <Content Include="AdminTemplate\assets\fonts\materialdesignicons-webfont3e71.ttf" />
+    <Content Include="AdminTemplate\assets\fonts\materialdesignicons-webfont3e71.woff" />
+    <Content Include="AdminTemplate\assets\fonts\materialdesignicons-webfontd41d.eot" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FirmCategoryController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\CrmWebAppContext.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Init\WebCommon.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Scripts\bootstrap.js.map" />
-    <Content Include="Scripts\bootstrap.esm.min.js.map" />
-    <Content Include="Scripts\bootstrap.esm.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
-    <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -359,6 +639,11 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\FirmCategory\Create.cshtml" />
+    <Content Include="Views\FirmCategory\Delete.cshtml" />
+    <Content Include="Views\FirmCategory\Details.cshtml" />
+    <Content Include="Views\FirmCategory\Edit.cshtml" />
+    <Content Include="Views\FirmCategory\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -378,6 +663,10 @@
     <ProjectReference Include="..\Crm.Common\Crm.Common.csproj">
       <Project>{cf4517bd-13bb-44bc-99db-bea8370547ca}</Project>
       <Name>Crm.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Crm.Core\Crm.Core.csproj">
+      <Project>{bae0ed52-015b-459c-a5e4-eddbfe0b4aeb}</Project>
+      <Name>Crm.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Crm.Entities\Crm.Entities.csproj">
       <Project>{ef58d7f5-64c9-4be0-9bd9-fceb9b923a13}</Project>

@@ -53,7 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="EntityFramework\DatabaseContext.cs" />
     <Compile Include="EntityFramework\Repository.cs" />
     <Compile Include="EntityFramework\RepositoryBase.cs" />
@@ -71,10 +70,17 @@
       <Project>{cf4517bd-13bb-44bc-99db-bea8370547ca}</Project>
       <Name>Crm.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Crm.Core\Crm.Core.csproj">
+      <Project>{bae0ed52-015b-459c-a5e4-eddbfe0b4aeb}</Project>
+      <Name>Crm.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Crm.Entities\Crm.Entities.csproj">
       <Project>{ef58d7f5-64c9-4be0-9bd9-fceb9b923a13}</Project>
       <Name>Crm.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

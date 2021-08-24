@@ -1,6 +1,5 @@
 ﻿using Crm.Common;
-using Crm.DataAccessLayer;
-using Crm.DataAccessLayer.Abstract;
+using Crm.Core.DataAccess;
 using Crm.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Crm.DataAccessLayer.EntityFramework
 {
-    public class Repository<T> : RepositoryBase, IRepository<T> where T : class // T new lenebilen bir tip olmalıdır.
+    public class Repository<T> : RepositoryBase, IDataAccess<T> where T : class // T new lenebilen bir tip olmalıdır.
     {
         //private DatabaseContext db = new DatabaseContext(); // her seferinde newlendiğinde ortak kullanımda hata verıyor.Singleton kullanbk.
         private DbSet<T> _objectSet; // Gelen objeni set değerini atayacagız.

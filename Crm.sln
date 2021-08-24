@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.WebApp", "Crm.WebApp\Cr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Common", "Crm.Common\Crm.Common.csproj", "{CF4517BD-13BB-44BC-99DB-BEA8370547CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crm.Core", "Crm.Core\Crm.Core.csproj", "{BAE0ED52-015B-459C-A5E4-EDDBFE0B4AEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF4517BD-13BB-44BC-99DB-BEA8370547CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE0ED52-015B-459C-A5E4-EDDBFE0B4AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE0ED52-015B-459C-A5E4-EDDBFE0B4AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE0ED52-015B-459C-A5E4-EDDBFE0B4AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE0ED52-015B-459C-A5E4-EDDBFE0B4AEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
